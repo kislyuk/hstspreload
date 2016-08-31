@@ -1,0 +1,30 @@
+language: python
+cache: pip
+
+python:
+  - 2.7
+  - 3.3
+  - 3.4
+  - 3.5
+  - pypy
+  - pypy3
+
+matrix:
+  include:
+    - language: generic
+      python: 2.7
+      os: osx
+    - language: generic
+      python: 3.3
+      os: osx
+    - language: generic
+      python: 3.5
+      os: osx
+
+script:
+  - make test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+sudo: false

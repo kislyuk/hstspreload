@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import os, sys, json, pickle, fileinput
+
+domains = []
+tss_json = ''.join(line for line in fileinput.input() if not line.lstrip().startswith("//"))
+for entry in json.loads(tss_json)["entries"]:
+    if entry.get("mode") != "force-https":
+        continue
+    domains.append(entry["name"])
+
+json.dump(domains, sys.stdout)
