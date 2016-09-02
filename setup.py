@@ -3,13 +3,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyhttpsec',
+    name='letspreload',
     version='0.0.1',
-    url='https://github.com/kislyuk/pyhttpsec',
+    url='https://github.com/kislyuk/letspreload',
     license='Apache Software License',
     author='Andrey Kislyuk',
     author_email='kislyuk@gmail.com',
-    description='HSTS and HPKP support for Python HTTP clients',
+    description='HSTS and HPKP Preload List support for Python HTTP clients',
     long_description=open('README.rst').read(),
     install_requires=[
     ],
