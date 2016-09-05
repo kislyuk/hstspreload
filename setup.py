@@ -3,9 +3,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='letspreload',
-    version='0.0.1',
-    url='https://github.com/kislyuk/letspreload',
+    name='hstspreload',
+    version='2016.9.5',
+    url='https://github.com/kislyuk/hstspreload',
     license='Apache Software License',
     author='Andrey Kislyuk',
     author_email='kislyuk@gmail.com',
