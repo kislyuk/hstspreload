@@ -1,4 +1,5 @@
-# hstspreload
+HSTSPreload
+===========
 
 ``hstspreload`` is a Python package that provides the Google `Transport Security list
 <https://chromium.googlesource.com/chromium/src/+/master/net/http/transport_security_state_static.json>`_ in compact and
